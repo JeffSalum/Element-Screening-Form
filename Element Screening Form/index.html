@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="Style.css" />
+  <img class="resize" src="Element Logo.png" alt="Covid Health Screening Form">
+  <title>Visitor's Health Screening Form-Element Doha LLC</title>
+</head>
+
+<body>
+
+  <header>
+    <h1 class="gitna">Visitor's Health Screening Form-Element Doha LLC</h1>
+    <p class="gitna">To prevent the spread of COVID-19 in our community and reduce the risk of exposure to our staff visitors, we are conducting a simple screening questionaire.</p>
+    <p class="gitna">Your participation is important to help us take precautionary measures to protect you and everyone in this building</p>
+    <p class="gitna">Thank you for your time.</p>
+    <h3 class="required">* REQUIRED</h3>
+
+    <table>
+      <tr>
+        <td>
+          <h1 class="pula">*</h1>
+        </td>
+        <td>
+          <h2>Date of Visit</h2>
+        </td>
+      </tr>
+    </table>
+    <label for="visit">Date:</label>
+    <input type="date" id="visit" name="Date of Visit" value="2021-01-01" min="2000-01-01" max="2050-12-31">
+    <label for="appt">Time:</label>
+    <input type="time" id="appt" name="appt" min="09:00" max="18:00" required>
+
+    <table>
+      <tr>
+        <td>
+          <h1 class="pula">*</h1>
+        </td>
+        <td>
+          <h2 id="redcolor">Visitor's Name</h2>
+        </td>
+      </tr>
+    </table>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required minlength="20" maxlength="100" size="50">
+
+    <table>
+      <tr>
+        <td>
+          <h2>Contac No.</h2>
+        </td>
+      </tr>
+    </table>
+    <label for="phone">Mobile No.:</label>
+    <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}" required>
+
+    <small>Format: 974-4564-7890</small>
+
+    <table>
+      <tr>
+        <td>
+          <h2>Ehteraz Health Status?</h2>
+        </td>
+      </tr>
+    </table>
+    <input type="checkbox">
+    <label class="bg-green">Green Code (Healthy)</label><br>
+    <input type="checkbox">
+    <label class="bg-yellow">Yellow Code (Quarantine)</label><br>
+    <input type="checkbox">
+    <label class="bg-grey">Grey Code (Suspected)</label><br>
+    <input type="checkbox">
+    <label class="bg-red">Red Code (Confirmed)</label>
+
+    <table>
+      <tr>
+        <td>
+          <h1 class="pula">*</h1>
+        </td>
+        <td>
+          <h2>QID No. / Passport No.</h2>
+        </td>
+      </tr>
+    </table>
+    <label for="name">Number:</label>
+    <input type="text" id="name" name="name" required minlength="20" maxlength="100" size="15">
+
+    <table>
+      <tr>
+        <td>
+          <h1 class="pula">*</h1>
+        </td>
+        <td>
+          <h2>Nationality</h2>
+        </td>
+      </tr>
+    </table>
+    <form>
+      <label for="cars">Nationality</label>
+      <select name="cars" id="cars">
+        <option value="Qatari">Qatari</option>
+        <option value="Filipino">Filipino</option>
+        <option value="Indian">Indian</option>
+        <option value="Nepal">Nepal</option><br>
+      </select>
+    </form>
+
+    <table>
+      <tr>
+        <td>
+          <h1 class="pula"></h1>
+        </td>
+        <td>
+          <p>Others:</p>
+        </td>
+      </tr>
+    </table>
+    <input type="text" id="name" name="name" required minlength="20" maxlength="100" size="15">
+
+    <table>
+      <tr>
+        <td>
+          <h1 class="pula">*</h1>
+        </td>
+        <td>
+          <h2>Meeting Venue / Reason of Visiting</h2>
+        </td>
+      </tr>
+    </table>
+    <label for="name">Purpose</label>
+    <input type="text" id="name" name="name" required minlength="20" maxlength="100" size="45">
+
+    <table>
+      <tr>
+        <td>
+          <h1 class="pula">*</h1>
+        </td>
+        <td>
+          <h2>Temperature reading of visitor (in degrees Celcius)</h2>
+        </td>
+      </tr>
+    </table>
+    <label for="name">🌡</label>
+    <input type="text" id="name" name="name" required minlength="20" maxlength="100" size="15">
+
+    <table>
+      <tr>
+        <td>
+          <h1 class="pula">*</h1>
+        </td>
+        <td>
+          <h2>Have you traveled abroad (i.e. to any countries outside of Qatar) in the past 14 days?</h2>
+        </td>
+      </tr>
+    </table>
+    <table>
+      <tr>
+        <div class="container">
+          <div class="round">
+            <td> <input type="checkbox" id="checkbox" />
+              <label for="checkbox"></label>
+            </td>
+            <td>Yes</td>
+          </div>
+        </div>
+      </tr>
+    </table>
+    <table>
+      <tr>
+        <div class="container">
+          <div class="round">
+            <td> <input type="checkbox" id="checkbox" />
+              <label for="checkbox"></label>
+            </td>
+            <td>No</td>
+          </div>
+        </div>
+      </tr>
+    </table>
+
+    <table>
+      <tr>
+        <td>
+          <h1 class="pula">*</h1>
+        </td>
+        <td>
+          <h2>Do you have flu-like symptons (e.g. fever, cough, runny nose, sore throat or loss of taste/smell, etc)?</h2>
+        </td>
+      </tr>
+    </table>
+    <table>
+      <tr>
+        <div class="container">
+          <div class="round">
+            <td> <input type="checkbox" id="checkbox" />
+              <label for="checkbox"></label>
+            </td>
+            <td>Yes</td>
+          </div>
+        </div>
+      </tr>
+    </table>
+    <table>
+      <tr>
+        <div class="container">
+          <div class="round">
+            <td> <input type="checkbox" id="checkbox" />
+              <label for="checkbox"></label>
+            </td>
+            <td>No</td>
+          </div>
+        </div>
+      </tr>
+    </table>
+
+    <table>
+      <tr>
+        <td>
+          <h1 class="pula">*</h1>
+        </td>
+        <td>
+          <h2>Did you, in the past 14 days, come in close contact with someone who (i) Is a confirmed Covid-19 case; or(ii) Is part of a Covid-19 cluster?</h2>
+        </td>
+      </tr>
+    </table>
+    <table>
+      <tr>
+        <div class="container">
+          <div class="round">
+            <td> <input type="checkbox" id="checkbox" />
+              <label for="checkbox"></label>
+            </td>
+            <td>Yes</td>
+          </div>
+        </div>
+      </tr>
+    </table>
+    <table>
+      <tr>
+        <div class="container">
+          <div class="round">
+            <td> <input type="checkbox" id="checkbox" />
+              <label for="checkbox"></label>
+            </td>
+            <td>No</td>
+          </div>
+        </div>
+      </tr>
+    </table>
+
+    <table>
+      <tr>
+        <td>
+          <h1 class="pula">*</h1>
+        </td>
+        <td>
+          <h2>Have you in received a quarantine or isolation order, stay-home notice, or been issued medical certificates for repiratory symptoms?</h2>
+        </td>
+      </tr>
+    </table>
+    <table>
+      <tr>
+        <div class="container">
+          <div class="round">
+            <td> <input type="checkbox" id="checkbox" />
+              <label for="checkbox"></label>
+            </td>
+            <td>Yes</td>
+          </div>
+        </div>
+      </tr>
+    </table>
+    <table>
+      <tr>
+        <div class="container">
+          <div class="round">
+            <td> <input type="checkbox" id="checkbox" />
+              <label for="checkbox"></label>
+            </td>
+            <td>No</td>
+          </div>
+        </div>
+      </tr>
+    </table>
+
+    <table>
+      <tr>
+        <td>
+          <h1 class="pula">*</h1>
+        </td>
+        <td>
+          <h2>If you have selected YES to any of the questions above you are not permitted to enter the premises.</h2>
+        </td>
+      </tr>
+    </table>
+    <label for="name"></label>
+    <input type="text" id="name" name="name" required minlength="20" maxlength="100" size="45">
+
+    <table>
+      <tr>
+        <td>
+          <h1 class="pula">**</h1>
+        </td>
+        <td>
+          <h2>Note: Information captured is used for contact tracing if required</h2>
+        <td>
+          <h1 class="pula">**</h1>
+        </td>
+        </td>
+      </tr>
+    </table>
+
+
+    <table>
+      <tr>
+        <div class="container">
+          <div class="round">
+            <td> <input type="checkbox" id="checkbox" />
+              <label for="checkbox"></label>
+            </td>
+            <td>I here by declare all the above information provided above are accurate and I am giving my consent of the use of the information provided, if necessary, to help prevent the spread of Covid-19 desiase.</td>
+          </div>
+        </div>
+      </tr>
+    </table>
+
+      <form class="" action="email" metho="jeffsalum@yahoo.com">
+          <input type="submit">
+          </form>
+
+  </header>
+
+
+</body>
+
+</html>
